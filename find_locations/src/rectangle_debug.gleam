@@ -1,4 +1,5 @@
 import gleam/float
+import gleam/function
 import gleam/int
 import gleam/io
 import gleam/list
@@ -19,27 +20,67 @@ fn index_point(point: Vec, rec: List(Rectangle)) -> Option(Int) {
   |> option.from_result
 }
 
-fn index(rectangles rs: List(Rectangle)) -> List(List(Option(Int))) {
-  case
+const goal_size = #(400.0, 300.0)
+
+fn transform_to_origin(ps: List(Vec)) {
+  let min =
+    ps
+    |> list.reduce(fn(a, b) { vector.map2(a, b, float.min) })
+  case min {
+    Error(_) -> []
+    Ok(min) -> ps |> list.map(vector.subtract(_, min))
+  }
+}
+
+fn index(
+  rectangles rs: List(Rectangle),
+) -> #(List(List(Option(Int))), fn(Vec) -> Vec) {
+  let min =
+    rs
+    |> list.map(fn(x) { x.low })
+    |> list.reduce(fn(a, b) { vector.map2(a, b, float.min) })
+  let max =
     rs
     |> list.map(fn(x) { x.high })
     |> list.reduce(fn(a, b) { vector.map2(a, b, float.max) })
-  {
-    Error(_) -> []
-    Ok(dim) -> {
-      list.range(0, float.round(dim.y) + 0)
-      |> list.map(fn(y) {
-        list.range(0, float.round(dim.x) + 0)
-        |> list.map(fn(x) {
-          index_point(Vec(int.to_float(x), int.to_float(y)), rs)
+
+  case min, max {
+    Ok(datum), Ok(dim) -> {
+      let dx = dim.x -. datum.x
+      let dy = dim.y -. datum.y
+      let scale_x = goal_size.0 /. dx
+      let scale_y = goal_size.1 /. dy
+
+      let trans = fn(v) {
+        v
+        |> vector.subtract(datum)
+        |> vector.multiply(Vec(scale_x, scale_y))
+      }
+
+      let rs =
+        list.map(rs, fn(r) {
+          rectangle.Rectangle(low: trans(r.low), high: trans(r.high))
         })
-      })
+
+      let new_min = trans(datum)
+      let new_max = trans(dim)
+      io.debug(new_max)
+      let res =
+        list.range(0, float.round(new_max.y) + 0)
+        |> list.map(fn(y) {
+          list.range(0, float.round(new_max.x) + 0)
+          |> list.map(fn(x) {
+            index_point(Vec(int.to_float(x), int.to_float(y)), rs)
+          })
+        })
+      #(res, trans)
     }
+    _, _ -> #([], function.identity)
   }
 }
 
 fn display_index(rectangles rs: List(Rectangle)) -> List(List(String)) {
-  let grid = index(rs)
+  let grid = index(rs).0
   grid
   |> list.map(fn(row) {
     row
@@ -72,8 +113,18 @@ fn display_point(
 }
 
 fn display_points(rectangle rs: List(Rectangle), points points: List(Vec)) {
+  let max =
+    rs
+    |> list.map(fn(x) { x.high })
+    |> list.reduce(fn(a, b) { vector.map2(a, b, float.max) })
+    |> result.unwrap(vector.zero)
+  let assert Ok(cheat_max) =
+    rectangle.new(max, vector.add(max, Vec(0.00001, 0.00001)))
+  io.debug(max)
+  let rs = [cheat_max, ..rs]
   let colours = glearray.from_list(colours)
-  let indicies = index(rs)
+  let #(indicies, transform) = index(rs)
+  let points = list.map(points, transform)
   let ps = points |> list.map(fn(v) { #(float.round(v.x), float.round(v.y)) })
   indicies
   |> list2.index_map(fn(rec, p) {

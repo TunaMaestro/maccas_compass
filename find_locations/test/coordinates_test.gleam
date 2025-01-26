@@ -23,12 +23,6 @@ pub const point_of_interest = [
   vector.Vec(-1.0, -1.0),
 ]
 
-// gleeunit test functions end in `_test`
-pub fn hello_world_test() {
-  1
-  |> should.equal(1)
-}
-
 pub fn rectangle_test() {
   rectangle.new(vector.Vec(3.0, 1.0), vector.Vec(5.0, 31.0))
   |> should.be_ok
@@ -107,7 +101,7 @@ pub fn search_1_test() {
   let poi = [v(0.0, 0.0), v(10.0, 10.0)]
   let f = fn(r: Rectangle) { poi |> list.filter(rectangle.contains(r, _)) }
   let res = coordinates.search_all(f, rec)
-  res |> list.map(fn(a) { a.0 }) |> rectangle_debug.debug_points(poi)
+  // res |> list.map(fn(a) { a.0 }) |> rectangle_debug.debug_points(poi)
   let exp = [
     #(r(v(0.0, 0.0), v(8.0, 16.0)), v(0.0, 0.0)),
     #(r(v(8.0, 0.0), v(16.0, 16.0)), v(10.0, 10.0)),
@@ -115,14 +109,15 @@ pub fn search_1_test() {
 
   exp
   |> list.map(fn(a) { a.0 })
-  |> rectangle_debug.debug_points(poi)
+  // |> rectangle_debug.debug_points(poi)
 
   should.equal(res |> set.from_list, exp |> set.from_list)
 }
 
 fn dbg(r) {
-  rectangle_debug.debug_points(r, point_of_interest)
+  // rectangle_debug.debug_points(r, point_of_interest)
   // rectangle_debug.debug(r)
+  r
 }
 
 pub fn search_test() {
@@ -142,13 +137,6 @@ pub fn search_test() {
     #(r(v(8.0, 8.0), v(16.0, 16.0)), v(11.0, 14.0)),
     #(r(v(8.0, 0.0), v(16.0, 8.0)), v(14.0, 7.0)),
   ]
-
-  io.println_error("Output:")
-  res |> list.map(tuple.fst) |> dbg
-  io.println_error("Expected:")
-  exp
-  |> list.map(tuple.fst)
-  |> dbg
 
   let res = res |> set.from_list
   let exp = exp |> set.from_list

@@ -85,8 +85,8 @@ pub fn bisect(rectangle r: Rectangle) -> List(Rectangle) {
 }
 
 pub fn search_all(
-  search_fn f: fn(Rectangle) -> List(a),
-  start_bound bound: Rectangle,
+  with f: fn(Rectangle) -> List(a),
+  start_in bound: Rectangle,
 ) -> List(#(Rectangle, a)) {
   let contained = f(bound)
   case contained {
