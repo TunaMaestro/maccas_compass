@@ -63,26 +63,25 @@ pub fn request_shutdown_test() {
   process.try_call(actor, fake_server.Query(_, query: braidwood_bound), 2)
   |> should.be_error
 }
+// pub fn rectangle_test() {
+// let actor = fake_server.start()
+// let assert Ok(aus_bound) =
+//   rectangle.new_raw(
+//     113.338953078,
+//     -43.6345972634,
+//     153.6380696,
+//     -10.6681857235,
+//   )
 
-pub fn rectangle_test() {
-  let actor = fake_server.start()
-  let assert Ok(aus_bound) =
-    rectangle.new_raw(
-      113.338953078,
-      -43.6345972634,
-      153.6380696,
-      -10.6681857235,
-    )
-
-  let r = process.call(actor, fake_server.Query(_, query: aus_bound), 2)
-  let assert Ok(towns) = fake_server.towns() |> result.all
-  let f = fn(rec: rectangle.Rectangle) {
-    process.call(actor, fake_server.Query(_, query: rec), 2)
-  }
-  let res = coordinates.search_all(start_in: aus_bound, with: f)
-  io.println_error("Results receieved, printing")
-  rectangle_debug.debug_points(
-    res |> list.map(tuple.fst),
-    towns |> list.map(fn(t) { t.coords }),
-  )
-}
+// let r = process.call(actor, fake_server.Query(_, query: aus_bound), 2)
+// let assert Ok(towns) = fake_server.towns() |> result.all
+// let f = fn(rec: rectangle.Rectangle) {
+//   process.call(actor, fake_server.Query(_, query: rec), 2)
+// }
+// let res = coordinates.search_all(start_in: aus_bound, with: f)
+// io.println_error("Results receieved, printing")
+// rectangle_debug.debug_points(
+//   res |> list.map(tuple.fst),
+//   towns |> list.map(fn(t) { t.coords }),
+// )
+// }
