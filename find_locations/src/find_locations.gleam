@@ -1,17 +1,11 @@
 import gleam/io
-import gleam/list
-import gleam/option.{type Option, None, Some}
+import vector.{type Vec}
+
 
 pub fn main() {
   io.println("Hello from find_locations!")
 }
 
-pub fn sequence_list_option(l: List(option.Option(a))) -> option.Option(List(a)) {
-  list.fold_right(l, Some([]), fn(a, l) {
-    a
-    |> option.then(fn(acc) {
-      l
-      |> option.map(list.prepend(acc, _))
-    })
-  })
+pub fn search(low: Vec, high: Vec) {
+  todo
 }

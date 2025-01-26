@@ -9,7 +9,7 @@ import rectangle_debug
 import tuple
 import vector
 
-const point_of_interest = [
+pub const point_of_interest = [
   vector.Vec(0.0, 0.0),
   vector.Vec(1.0, 1.0),
   vector.Vec(1.0, 6.0),

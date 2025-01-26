@@ -1,7 +1,4 @@
-import gleam/float
-import gleam/io
 import gleam/list
-import gleam/order
 import rectangle.{type Rectangle, Rectangle}
 import vector.{type Vec, Vec, add}
 
