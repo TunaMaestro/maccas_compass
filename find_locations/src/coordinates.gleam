@@ -87,11 +87,12 @@ pub fn bisect(rectangle r: Rectangle) -> List(Rectangle) {
 pub fn search_all(
   with f: fn(Rectangle) -> List(a),
   start_in bound: Rectangle,
+  max_per_box max: Int,
 ) -> List(#(Rectangle, a)) {
   let contained = f(bound)
-  case contained {
-    [] -> []
-    [x] -> [#(bound, x)]
-    _ -> bisect(bound) |> list.map(search_all(f, _)) |> list.flatten
+  let int = contained |> list.length
+  case int <= max {
+    True -> contained |> list.map(fn(x) { #(bound, x) })
+    False -> bisect(bound) |> list.map(search_all(f, _, max)) |> list.flatten
   }
 }

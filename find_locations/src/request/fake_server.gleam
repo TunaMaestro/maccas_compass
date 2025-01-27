@@ -15,6 +15,10 @@ pub type Town {
   Town(name: String, coords: vector.Vec)
 }
 
+pub opaque type Server {
+  Server(Subject(Message(rectangle.Rectangle)))
+}
+
 const filename = "test/aus_towns.tsv"
 
 pub fn towns() {
@@ -44,14 +48,14 @@ pub fn towns() {
   })
 }
 
-pub fn start() {
+pub fn start() -> Server {
   let state = case towns() |> result.all {
     Ok(state) -> state
     Error(msg) -> panic as { "Failed to parse '" <> msg <> "'" }
   }
   let assert Ok(self) = actor.start(state, handle_message)
     as "Couldn't start actor"
-  self
+  Server(self)
 }
 
 // First step of implementing the stack Actor is to define the message type that
@@ -95,4 +99,9 @@ fn handle_message(
       actor.continue(state)
     }
   }
+}
+
+pub fn actor(s: Server) -> process.Subject(_) {
+  let Server(a) = s
+  a
 }

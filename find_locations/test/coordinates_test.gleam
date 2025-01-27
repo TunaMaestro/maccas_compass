@@ -100,7 +100,7 @@ pub fn search_1_test() {
   let r = rectangle.Rectangle
   let poi = [v(0.0, 0.0), v(10.0, 10.0)]
   let f = fn(r: Rectangle) { poi |> list.filter(rectangle.contains(r, _)) }
-  let res = coordinates.search_all(f, rec)
+  let res = coordinates.search_all(f, rec, 1)
   // res |> list.map(fn(a) { a.0 }) |> rectangle_debug.debug_points(poi)
   let exp = [
     #(r(v(0.0, 0.0), v(8.0, 16.0)), v(0.0, 0.0)),
@@ -125,7 +125,7 @@ pub fn search_test() {
   let f = fn(r: Rectangle) {
     point_of_interest |> list.filter(rectangle.contains(r, _))
   }
-  let res = coordinates.search_all(f, rec)
+  let res = coordinates.search_all(f, rec, 1)
   let v = vector.Vec
   let r = rectangle.Rectangle
   let exp = [

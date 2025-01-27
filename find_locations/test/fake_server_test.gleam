@@ -7,14 +7,12 @@ import rectangle
 import request/fake_server.{Town}
 import vector
 
-pub fn setup_test() {
-  let _actor = fake_server.start()
-}
-
 pub fn request_one_test() {
   // testing:
   // 176	Braidwood	Australia	-35.43889069998469	149.7955552
-  let actor = fake_server.start()
+  let actor =
+    fake_server.start()
+    |> fake_server.actor
   let assert Ok(braidwood_bound) =
     rectangle.new(vector.Vec(149.78, -35.45), vector.Vec(149.9, -35.42))
 
@@ -30,7 +28,7 @@ pub fn request_all_test() {
   // testing:
   // bound box over Australia
   // 113.338953078, -43.6345972634, 153.6380696, -10.6681857235
-  let actor = fake_server.start()
+  let actor = fake_server.start() |> fake_server.actor
   let assert Ok(aus_bound) =
     rectangle.new_raw(
       113.338953078,
@@ -51,7 +49,9 @@ pub fn request_all_test() {
 }
 
 pub fn request_shutdown_test() {
-  let actor = fake_server.start()
+  let actor =
+    fake_server.start()
+    |> fake_server.actor
   let assert Ok(braidwood_bound) =
     rectangle.new(vector.Vec(149.78, -35.45), vector.Vec(149.9, -35.42))
 
