@@ -6,7 +6,7 @@ import gleam/io
 import gleam/otp/actor
 import gleam/string
 
-const dequeue_delay = 0
+const dequeue_delay = 100
 
 type State(query, response) {
   State(
@@ -92,13 +92,13 @@ fn handle_message(
     }
 
     Respond(Request(caller, query)) -> {
-      let response = state.callback(query)
-      process.send(caller, response)
       io.println_error(
         "\u{1b}[31mRequest #"
         <> string.pad_start(int.to_string(state.request_count), 4, " ")
         <> "\u{1b}[m",
       )
+      let response = state.callback(query)
+      process.send(caller, response)
       actor.continue(State(..state, request_count: state.request_count + 1))
     }
   }

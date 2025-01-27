@@ -1,4 +1,6 @@
 import gleam/list
+import gleam/otp/task
+import gleam/result
 import rectangle.{type Rectangle, Rectangle}
 import vector.{type Vec, Vec, add}
 
@@ -93,6 +95,16 @@ pub fn search_all(
   let int = contained |> list.length
   case int <= max {
     True -> contained |> list.map(fn(x) { #(bound, x) })
-    False -> bisect(bound) |> list.map(search_all(f, _, max)) |> list.flatten
+    False -> {
+      let assert Ok(result) =
+        bisect(bound)
+        |> list.map(fn(rectangle) {
+          task.async(fn() { search_all(f, rectangle, max) })
+        })
+        |> task.try_await_all(10_000_000_000)
+        |> result.all
+        as "awaiting search subcalls failed"
+      result |> list.flatten
+    }
   }
 }

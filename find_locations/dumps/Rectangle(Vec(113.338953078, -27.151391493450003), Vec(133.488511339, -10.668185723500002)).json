@@ -1,0 +1,378 @@
+{
+  "places": [
+    {
+      "formattedAddress": "Fitzer Dr, Ludmilla NT 0820, Australia",
+      "location": {
+        "latitude": -12.409937,
+        "longitude": 130.855674
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.411359530291502,
+          "longitude": 130.85433416970852
+        },
+        "high": {
+          "latitude": -12.408661569708498,
+          "longitude": 130.85703213029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Bagot Road",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Fitzer Dr, Ludmilla"
+    },
+    {
+      "formattedAddress": "Cnr Hamersley Street &, Napier Terrace, Broome WA 6725, Australia",
+      "location": {
+        "latitude": -17.955232,
+        "longitude": 122.24091500000002
+      },
+      "viewport": {
+        "low": {
+          "latitude": -17.9564141802915,
+          "longitude": 122.23959686970852
+        },
+        "high": {
+          "latitude": -17.953716219708497,
+          "longitude": 122.2422948302915
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Broome",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Cnr Hamersley Street &, Napier Terrace, Broome"
+    },
+    {
+      "formattedAddress": "3 Tarakan Ct, Johnston NT 0832, Australia",
+      "location": {
+        "latitude": -12.5006832,
+        "longitude": 131.00560679999998
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.501821430291503,
+          "longitude": 131.00421891970848
+        },
+        "high": {
+          "latitude": -12.499123469708499,
+          "longitude": 131.00691688029147
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Lambrick Avenue",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "3 Tarakan Ct, Johnston"
+    },
+    {
+      "formattedAddress": "58 Bradshaw Terrace, Casuarina NT 0810, Australia",
+      "location": {
+        "latitude": -12.370882199999999,
+        "longitude": 130.8830905
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.3723196802915,
+          "longitude": 130.88176271970852
+        },
+        "high": {
+          "latitude": -12.369621719708496,
+          "longitude": 130.88446068029148
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Casuarina North",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "58 Bradshaw Terrace, Casuarina",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJh7Q7eqGUwCwRZ-lPIj1xSNY",
+          "id": "ChIJh7Q7eqGUwCwRZ-lPIj1xSNY"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "South Hedland Shopping Centre, Throssell Rd, South Hedland WA 6721, Australia",
+      "location": {
+        "latitude": -20.409782,
+        "longitude": 118.59866299999999
+      },
+      "viewport": {
+        "low": {
+          "latitude": -20.4111149802915,
+          "longitude": 118.59748441970849
+        },
+        "high": {
+          "latitude": -20.408417019708498,
+          "longitude": 118.60018238029147
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's South Hedland",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "South Hedland Shopping Centre, Throssell Rd, South Hedland",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJsRlPrjlK9SsRSNRh88J5RPs",
+          "id": "ChIJsRlPrjlK9SsRSNRh88J5RPs"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Darwin Central, Cnr Smith &, Knuckey St, Darwin City NT 0800, Australia",
+      "location": {
+        "latitude": -12.463030999999999,
+        "longitude": 130.841366
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.464337080291504,
+          "longitude": 130.84009821970849
+        },
+        "high": {
+          "latitude": -12.461639119708499,
+          "longitude": 130.84279618029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Darwin Central",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Darwin Central, Cnr Smith &, Knuckey St, Darwin City",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJOe_fwAiRwCwRpC_4YR94lEc",
+          "id": "ChIJOe_fwAiRwCwRpC_4YR94lEc"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "445 Stuart Hwy, Coolalinga NT 0835, Australia",
+      "location": {
+        "latitude": -12.5218463,
+        "longitude": 131.04117259999998
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.523285230291503,
+          "longitude": 131.03968201970852
+        },
+        "high": {
+          "latitude": -12.520587269708498,
+          "longitude": 131.04237998029151
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Coolalinga",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "445 Stuart Hwy, Coolalinga",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJHSeOqHekwCwRHFY00XMxEb8",
+          "id": "ChIJHSeOqHekwCwRHFY00XMxEb8"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "21/29 Stuart Hwy, Stuart Park NT 0820, Australia",
+      "location": {
+        "latitude": -12.4495747,
+        "longitude": 130.8406728
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.450942380291501,
+          "longitude": 130.83945566970851
+        },
+        "high": {
+          "latitude": -12.448244419708498,
+          "longitude": 130.84215363029151
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Stuart Park",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "21/29 Stuart Hwy, Stuart Park"
+    },
+    {
+      "formattedAddress": "Frances Drive &, University Ave, Palmerston City NT 0830, Australia",
+      "location": {
+        "latitude": -12.4778906,
+        "longitude": 130.9833746
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.479474380291503,
+          "longitude": 130.98208946970851
+        },
+        "high": {
+          "latitude": -12.476776419708498,
+          "longitude": 130.98478743029148
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Palmerston",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Frances Drive &, University Ave, Palmerston City"
+    },
+    {
+      "formattedAddress": "45 Julius St, Berrimah NT 0828, Australia",
+      "location": {
+        "latitude": -12.4380227,
+        "longitude": 130.9341232
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.439287230291503,
+          "longitude": 130.93282776970852
+        },
+        "high": {
+          "latitude": -12.436589269708499,
+          "longitude": 130.93552573029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Berrimah",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "45 Julius St, Berrimah"
+    },
+    {
+      "formattedAddress": "13 First St, Katherine NT 0850, Australia",
+      "location": {
+        "latitude": -14.46386,
+        "longitude": 132.264592
+      },
+      "viewport": {
+        "low": {
+          "latitude": -14.4654458802915,
+          "longitude": 132.2630799197085
+        },
+        "high": {
+          "latitude": -14.462747919708494,
+          "longitude": 132.26577788029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Katherine",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "13 First St, Katherine"
+    },
+    {
+      "formattedAddress": "Karratha City Shopping Centre, Welcome Rd, Karratha WA 6714, Australia",
+      "location": {
+        "latitude": -20.7357449,
+        "longitude": 116.84727909999998
+      },
+      "viewport": {
+        "low": {
+          "latitude": -20.7370926802915,
+          "longitude": 116.84609621970851
+        },
+        "high": {
+          "latitude": -20.734394719708497,
+          "longitude": 116.84879418029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Karratha",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Karratha City Shopping Centre, Welcome Rd, Karratha",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJKaktRdYU9isR_zZHT1vTIaE",
+          "id": "ChIJKaktRdYU9isR_zZHT1vTIaE"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "8 Birkett Ct, Moulden NT 0830, Australia",
+      "location": {
+        "latitude": -12.4996542,
+        "longitude": 130.970852
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.5010959302915,
+          "longitude": 130.96944986970848
+        },
+        "high": {
+          "latitude": -12.498397969708495,
+          "longitude": 130.97214783029148
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "Bill McDonald",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "8 Birkett Ct, Moulden"
+    },
+    {
+      "formattedAddress": "McDonalds Well, Mundabullangana WA 6721, Australia",
+      "location": {
+        "latitude": -20.75,
+        "longitude": 118.10000000000001
+      },
+      "viewport": {
+        "low": {
+          "latitude": -20.751348980291503,
+          "longitude": 118.09865101970851
+        },
+        "high": {
+          "latitude": -20.748651019708497,
+          "longitude": 118.1013489802915
+        }
+      },
+      "displayName": {
+        "text": "McDonalds Well",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Mundabullangana"
+    },
+    {
+      "formattedAddress": "26B McKinnon Rd, Pinelands NT 0829, Australia",
+      "location": {
+        "latitude": -12.4545153,
+        "longitude": 130.9618825
+      },
+      "viewport": {
+        "low": {
+          "latitude": -12.456371080291502,
+          "longitude": 130.96053436970848
+        },
+        "high": {
+          "latitude": -12.453673119708498,
+          "longitude": 130.96323233029148
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald Civil",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "26B McKinnon Rd, Pinelands"
+    }
+  ]
+}

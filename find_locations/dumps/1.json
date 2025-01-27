@@ -1,0 +1,518 @@
+{
+  "places": [
+    {
+      "formattedAddress": "183 Botany Rd, Waterloo NSW 2017, Australia",
+      "location": {
+        "latitude": -33.9016995,
+        "longitude": 151.2018406
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.9029866802915,
+          "longitude": 151.2003618697085
+        },
+        "high": {
+          "latitude": -33.9002887197085,
+          "longitude": 151.20305983029147
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Waterloo",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "183 Botany Rd, Waterloo"
+    },
+    {
+      "formattedAddress": "R127/305a Botany Rd, Zetland NSW 2017, Australia",
+      "location": {
+        "latitude": -33.905981,
+        "longitude": 151.2034424
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.907400830291493,
+          "longitude": 151.20217476970851
+        },
+        "high": {
+          "latitude": -33.904702869708494,
+          "longitude": 151.2048727302915
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Green Square",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "R127/305a Botany Rd, Zetland",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJ0fgp0caxEmsRXLfmOIKlo3A",
+          "id": "ChIJ0fgp0caxEmsRXLfmOIKlo3A"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "10 Barker St, Kingsford NSW 2032, Australia",
+      "location": {
+        "latitude": -33.9198375,
+        "longitude": 151.2274489
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.921201230291494,
+          "longitude": 151.2259730197085
+        },
+        "high": {
+          "latitude": -33.918503269708495,
+          "longitude": 151.2286709802915
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Kingsford",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "10 Barker St, Kingsford"
+    },
+    {
+      "formattedAddress": "Shop 4-5 75 Belmore Road Level 0 Royal Randwick Shopping Centre, Randwick NSW 2031, Australia",
+      "location": {
+        "latitude": -33.9149755,
+        "longitude": 151.2404698
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.9164383302915,
+          "longitude": 151.2391235197085
+        },
+        "high": {
+          "latitude": -33.9137403697085,
+          "longitude": 151.24182148029146
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Randwick",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Shop 4-5 75 Belmore Road Level 0 Royal Randwick Shopping Centre, Randwick",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJczHfHxmyEmsRZOi9YzhJmWQ",
+          "id": "ChIJczHfHxmyEmsRZOi9YzhJmWQ"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Railway Square, 863 George St, Ultimo NSW 2007, Australia",
+      "location": {
+        "latitude": -33.8836976,
+        "longitude": 151.20242439999998
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8851535302915,
+          "longitude": 151.20112341970852
+        },
+        "high": {
+          "latitude": -33.8824555697085,
+          "longitude": 151.20382138029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Ultimo",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Railway Square, Taragon Central, 863 George St, Ultimo"
+    },
+    {
+      "formattedAddress": "600 George St, Sydney NSW 2000, Australia",
+      "location": {
+        "latitude": -33.875420999999996,
+        "longitude": 151.206613
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8768167302915,
+          "longitude": 151.2052921197085
+        },
+        "high": {
+          "latitude": -33.8741187697085,
+          "longitude": 151.20799008029147
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's George St",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "600 George St, Sydney",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJ0yFTTTyuEmsRqNFpth7vMEU",
+          "id": "ChIJ0yFTTTyuEmsRqNFpth7vMEU"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "45-47 Darlinghurst Rd, Potts Point NSW 2011, Australia",
+      "location": {
+        "latitude": -33.8735619,
+        "longitude": 151.223514
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8749702802915,
+          "longitude": 151.22224241970849
+        },
+        "high": {
+          "latitude": -33.872272319708507,
+          "longitude": 151.22494038029146
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Kings Cross",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "45-47 Darlinghurst Rd, Potts Point"
+    },
+    {
+      "formattedAddress": "375/377 George St, Sydney NSW 2000, Australia",
+      "location": {
+        "latitude": -33.869186899999995,
+        "longitude": 151.2067874
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8702967302915,
+          "longitude": 151.2055200197085
+        },
+        "high": {
+          "latitude": -33.8675987697085,
+          "longitude": 151.20821798029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's The Strand",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "375/377 George St, Sydney"
+    },
+    {
+      "formattedAddress": "NE11, 9 Little Pier St, Haymarket NSW 2000, Australia",
+      "location": {
+        "latitude": -33.877910299999996,
+        "longitude": 151.20299559999998
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8792059302915,
+          "longitude": 151.20175081970851
+        },
+        "high": {
+          "latitude": -33.8765079697085,
+          "longitude": 151.2044487802915
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald’s Darling Square",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "NE11, 9 Little Pier St, Haymarket",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJGShY3CSuEmsRlgGgzAHgs2g",
+          "id": "ChIJGShY3CSuEmsRlgGgzAHgs2g"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "Bishop St, St Peters NSW 2044, Australia",
+      "location": {
+        "latitude": -33.9143317,
+        "longitude": 151.1779406
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.9155863802915,
+          "longitude": 151.17663826970852
+        },
+        "high": {
+          "latitude": -33.9128884197085,
+          "longitude": 151.17933623029151
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's St Peters",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Bishop St, St Peters"
+    },
+    {
+      "formattedAddress": "Loftus St, Sydney NSW 2000, Australia",
+      "location": {
+        "latitude": -33.861815100000008,
+        "longitude": 151.2103751
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8632381302915,
+          "longitude": 151.20910801970848
+        },
+        "high": {
+          "latitude": -33.860540169708507,
+          "longitude": 151.21180598029147
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Sydney Gateway",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Loftus St, Sydney",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJ_9AgbkKuEmsRAgAuY-sp7-s",
+          "id": "ChIJ_9AgbkKuEmsRAgAuY-sp7-s"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "1 Harbour St, Haymarket NSW 2000, Australia",
+      "location": {
+        "latitude": -33.8744009,
+        "longitude": 151.2017374
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8758384302915,
+          "longitude": 151.20094276970852
+        },
+        "high": {
+          "latitude": -33.8731404697085,
+          "longitude": 151.20364073029151
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Darling Quarter",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "1 Harbour St, Haymarket",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJrWQcnzuuEmsRPTRAtkD-Fag",
+          "id": "ChIJrWQcnzuuEmsRPTRAtkD-Fag"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "9 Ross Smith Ave, Mascot NSW 2020, Australia",
+      "location": {
+        "latitude": -33.9327241,
+        "longitude": 151.1885802
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.9341457302915,
+          "longitude": 151.1872402697085
+        },
+        "high": {
+          "latitude": -33.9314477697085,
+          "longitude": 151.18993823029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Ross Smith Avenue",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "9 Ross Smith Ave, Mascot"
+    },
+    {
+      "formattedAddress": "LG081, QVB, 439-481 George St, Sydney NSW 2000, Australia",
+      "location": {
+        "latitude": -33.8725507,
+        "longitude": 151.2067568
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.873925080291507,
+          "longitude": 151.20530726970847
+        },
+        "high": {
+          "latitude": -33.871227119708507,
+          "longitude": 151.20800523029146
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's QVB",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "LG081, QVB, 439-481 George St, Sydney",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJISz8NjyuEmsRFTQ9Iw7Ear8",
+          "id": "ChIJISz8NjyuEmsRFTQ9Iw7Ear8"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "186 Arden St, Coogee NSW 2034, Australia",
+      "location": {
+        "latitude": -33.9202866,
+        "longitude": 151.2566668
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.9215674302915,
+          "longitude": 151.25543296970852
+        },
+        "high": {
+          "latitude": -33.918869469708504,
+          "longitude": 151.25813093029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Coogee",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "186 Arden St, Coogee"
+    },
+    {
+      "formattedAddress": "Cnr, Unit 9/7 Bridge Rd, Stanmore NSW 2048, Australia",
+      "location": {
+        "latitude": -33.8882194,
+        "longitude": 151.1720379
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8895702802915,
+          "longitude": 151.1705283197085
+        },
+        "high": {
+          "latitude": -33.8868723197085,
+          "longitude": 151.17322628029149
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Stanmore",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Cnr, Unit 9/7 Bridge Rd, Stanmore"
+    },
+    {
+      "formattedAddress": "164 Campbell Parade, Bondi Beach NSW 2026, Australia",
+      "location": {
+        "latitude": -33.8901628,
+        "longitude": 151.2749131
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.89155758029149,
+          "longitude": 151.27367956970849
+        },
+        "high": {
+          "latitude": -33.888859619708491,
+          "longitude": 151.27637753029146
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Bondi Beach",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "164 Campbell Parade, Bondi Beach"
+    },
+    {
+      "formattedAddress": "757 Anzac Parade, Maroubra NSW 2035, Australia",
+      "location": {
+        "latitude": -33.9418552,
+        "longitude": 151.2390552
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.943175680291496,
+          "longitude": 151.23776181970848
+        },
+        "high": {
+          "latitude": -33.9404777197085,
+          "longitude": 151.24045978029147
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Maroubra",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "757 Anzac Parade, Maroubra"
+    },
+    {
+      "formattedAddress": "Wynyard Railway Concourse Wynyard St &, Carrington St, Sydney NSW 2000, Australia",
+      "location": {
+        "latitude": -33.8656657,
+        "longitude": 151.2062738
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.8669960302915,
+          "longitude": 151.20497651970851
+        },
+        "high": {
+          "latitude": -33.864298069708504,
+          "longitude": 151.2076744802915
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's Wynyard Station",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Wynyard Railway Concourse Wynyard St &, Carrington St, Sydney",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJ6_n85kCuEmsR0eBW__dFWAQ",
+          "id": "ChIJ6_n85kCuEmsR0eBW__dFWAQ"
+        }
+      ]
+    },
+    {
+      "formattedAddress": "1A Butler Rd, Mascot NSW 2020, Australia",
+      "location": {
+        "latitude": -33.9449264,
+        "longitude": 151.1847362
+      },
+      "viewport": {
+        "low": {
+          "latitude": -33.946232380291491,
+          "longitude": 151.18324511970852
+        },
+        "high": {
+          "latitude": -33.943534419708492,
+          "longitude": 151.18594308029151
+        }
+      },
+      "businessStatus": "OPERATIONAL",
+      "displayName": {
+        "text": "McDonald's General Holmes Drive",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "Parking lot, 1A Butler Rd, Mascot",
+      "containingPlaces": [
+        {
+          "name": "places/ChIJvZs6_zuxEmsRtGfeHKoe6hA",
+          "id": "ChIJvZs6_zuxEmsRtGfeHKoe6hA"
+        }
+      ]
+    }
+  ]
+}

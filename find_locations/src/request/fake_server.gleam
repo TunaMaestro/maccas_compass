@@ -1,5 +1,7 @@
 import gleam/erlang/process.{type Subject}
 import gleam/float
+import gleam/int
+import gleam/io
 import gleam/list
 import gleam/otp/actor
 import gleam/result
@@ -8,8 +10,9 @@ import rectangle
 import simplifile
 import vector
 
-type State =
-  List(Town)
+type State {
+  State(List(Town), request_count: Int)
+}
 
 pub type Town {
   Town(name: String, coords: vector.Vec)
@@ -50,7 +53,7 @@ pub fn towns() {
 
 pub fn start() -> Server {
   let state = case towns() |> result.all {
-    Ok(state) -> state
+    Ok(state) -> State(state, 0)
     Error(msg) -> panic as { "Failed to parse '" <> msg <> "'" }
   }
   let assert Ok(self) = actor.start(state, handle_message)
@@ -92,11 +95,17 @@ fn handle_message(
     // `actor.continue` with this new stack, causing the actor to process any
     // queued messages or wait for more.
     Query(client, value) -> {
+      io.println_error(
+        "\u{1b}[31mRequest #"
+        <> string.pad_start(int.to_string(state.request_count), 4, " ")
+        <> "\u{1b}[m",
+      )
+      let State(towns, reqs) = state
       let contained =
-        state
+        towns
         |> list.filter(fn(town) { rectangle.contains(town.coords, in: value) })
       process.send(client, contained)
-      actor.continue(state)
+      actor.continue(State(towns, reqs + 1))
     }
   }
 }
