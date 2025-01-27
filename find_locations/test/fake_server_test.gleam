@@ -1,18 +1,14 @@
-import coordinates
-import fake_server.{Town}
 import gleam/erlang/process
-import gleam/io
 import gleam/list
 import gleam/result
 import gleam/set
 import gleeunit/should
 import rectangle
-import rectangle_debug
-import tuple
+import request/fake_server.{Town}
 import vector
 
 pub fn setup_test() {
-  let actor = fake_server.start()
+  let _actor = fake_server.start()
 }
 
 pub fn request_one_test() {

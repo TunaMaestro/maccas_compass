@@ -1,11 +1,11 @@
 import coordinates
-import fake_server
 import gleam/erlang/process
 import gleam/io
 import gleam/list
 import gleam/result
 import rectangle
 import rectangle_debug
+import request/fake_server
 import tuple
 import vector.{type Vec}
 
